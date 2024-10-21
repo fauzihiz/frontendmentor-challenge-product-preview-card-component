@@ -106,12 +106,31 @@
       gap: 10px;
       border: none;
     }
+    #buy-button:hover {
+      background-color: #184131;
+    }
     #button-text {
       color: white;
     }
     @media (min-width:48em) {
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       main {
         flex-direction: row;
+        width: 600px;
+      }
+      #parfume-img img {
+        content: url('./images/image-product-desktop.jpg');
+      }
+      #parfume-content {
+        padding: 5px 20px 5px 20px;
+        justify-content: center;
+      }
+      .perfume-title {
+        margin-right: 30px;
       }
     }
   </style>
