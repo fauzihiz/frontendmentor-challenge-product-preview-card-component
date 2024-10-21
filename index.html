@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    h1 {
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      color: #1E252B;
+    }
+    #true-price h1 {
+      color: #3D8168;
+    }
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      color: #95959D;
+      font-size: 14px;
+      letter-spacing: 5px;
+      font-weight: 700;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      color: #95959D;
+      font-weight: 500;
+    }
+    #button-text {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    body {
+      background-color: #F3EAE3;
+      margin: 0;
+      padding: 40px 10px;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+    main {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 0;
+      max-width: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    #parfume-img img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+    #parfume-content {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      padding: 1px 20px 10px 20px;
+    }
+    .perfume-title {
+      margin-top: 0;
+    }
+    .perfume-par {
+      margin-top: 0;
+    }
+    #parfume-price {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+    }
+    #true-price {
+      color: #3D8168;
+    }
+    #false-price {
+      text-decoration: line-through;
+    }
+    #buy-button {
+      display: flex;
+      background-color: #3D8168;
+      border-radius: 15px;
+      max-width: 100%;
+      padding: 20px 15px;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      gap: 10px;
+      border: none;
+    }
+    #button-text {
+      color: white;
+    }
+    @media (min-width:48em) {
+      main {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="parfume-img" alt="parfume-img">
+      <img src="./images/image-product-mobile.jpg">
+    </div>
+    <div id="parfume-content">
+      <h3>PERFUME</h3>
+      <h1 class="perfume-title">Gabrielle Essence Eau De Parfum</h1>
+      <p class="perfume-par">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+      <div id="parfume-price">
+        <div id="true-price"><h1>$149.99</h1></div>
+        <div id="false-price"><p>$169.99</p></div>
+      </div>
+      <button type="button" id="buy-button">
+        <img id="cart-icon" src="./images/icon-cart.svg">
+        <div id="button-text">Add to Cart</div>
+      </button>
+    </div>
+  </main>
+</body>
+</html>
